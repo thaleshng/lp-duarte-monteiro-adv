@@ -7,7 +7,7 @@ export const AboutSection = () => {
         <Section>
             <AboutSectionTitle>Apresentação</AboutSectionTitle>
             <DivAbout>
-                <img src={profissionalImage} alt="" />
+                <img src={profissionalImage} alt="Imagem do Advogado da Duarte Monteiro Advogados" />
                 <DivAboutInformation>
                     <p>Olá, sou Luan Monteiro, e minha missão é garantir que você possa dirigir com tranquilidade, sem se preocupar com as burocracias da sua CNH!</p>
                     <p>O escritório Duarte Monteiro Advogados é referência em inovação no setor jurídico, combinando modernidade e eficiência para melhor atender nossos clientes.</p>
@@ -47,6 +47,7 @@ const DivAbout = styled.div`
 
     & > img {
         width: 360px;
+        height: 368px;
 
         border-radius: 10px; 
     }

@@ -39,7 +39,7 @@ export const CustomerFeedbackSection = () => {
                     {feedbackImages.map((img, index) => (
                         <SwiperSlide key={index}>
                             <Slide>
-                                <img src={img} alt={`Feedback ${index + 1}`} />
+                                <img src={img} alt={`Feedback de Cliente ${index + 1}`} />
                             </Slide>
                         </SwiperSlide>
                     ))}
@@ -94,6 +94,7 @@ const Slide = styled.div`
 
     & > img {
         width: 100%;
+        max-height: 440px;
     }
 `;
 

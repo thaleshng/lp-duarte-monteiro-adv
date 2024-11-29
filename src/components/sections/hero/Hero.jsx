@@ -8,14 +8,14 @@ import { ContactButton } from "../../button/Button"
 export const Hero = () => {
     return (
         <HeroContent>
-            <h1><LogoImg src={logo} alt="" /></h1>
+            <h1><LogoImg src={logo} alt="Logo da Duarte Monteiro Advogados" /></h1>
             <div>
                 <HeroTitle>CNH SUSPENSA OU CASSADA?</HeroTitle>
                 <HeroDescription>Fale com advogado especialista em trânsito para resolver o seu caso.</HeroDescription>
             </div>
             <HeroSubtext>Somos referência em Recursos de Multas de Trânsito em Minas Gerais!</HeroSubtext>
             <ContactButton />
-            <ScrollDownImg src={scrollDownImg} alt="" />
+            <ScrollDownImg src={scrollDownImg} alt="Imagem de Placa de Trânsito com uma seta apontando para baixo" />
         </HeroContent>
     )
 }
@@ -64,6 +64,7 @@ const HeroSubtext = styled.p`
 
 const ScrollDownImg = styled.img`
     width: 150px;
+    height: 120px;
 
     animation: scrolldown infinite alternate 0.6s ease-in-out;
 `

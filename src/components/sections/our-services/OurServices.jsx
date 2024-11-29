@@ -12,27 +12,27 @@ export const ServicesSection = () => {
             <ServicesSectionTitle>Em que mais podemos te ajudar?</ServicesSectionTitle>
             <DivServices>
                 <DivService>
-                    <img src={service1Img} alt="" />
+                    <img src={service1Img} alt="Imagem de uma Carteira de Habilitação suspensa" />
                     <p>RECUPERAMOS SUA CNH SUSPENSA OU CASSADA</p>
                 </DivService>
                 <DivService>
-                    <img src={service2Img} alt="" />
+                    <img src={service2Img} alt="Imagem de um condutor fazendo o teste do bafômetro" />
                     <p>RECORREMOS A MULTAS DO BAFÔMETRO</p>
                 </DivService>
                 <DivService>
-                    <img src={service3Img} alt="" />
+                    <img src={service3Img} alt="Imagem de um guarda de trânsito multando um condutor" />
                     <p>EQUIPE ESPECIALIZADA EM RECURSOS DE MULTAS DE TRÂNSITO</p>
                 </DivService>
                 <DivService>
-                    <img src={service4Img} alt="" />
+                    <img src={service4Img} alt="Imagem de um condutor récem habilitado mostrando sua Carteira de Habilitação Provisória" />
                     <p>CNH PROVISÓRIA? EVITAMOS QUE PERCA SEU DIREITO DE DIRIGIR!</p>
                 </DivService>
                 <DivService>
-                    <img src={service5Img} alt="" />
+                    <img src={service5Img} alt="Imagem de um Agente de Trânsito conferindo multas que excedem os pontos da Carteira de Habilitação" />
                     <p>EXCESSO DE PONTOS? REGULARIZAMOS SUA CNH!</p>
                 </DivService>
                 <DivService>
-                    <img src={service6Img} alt="" />
+                    <img src={service6Img} alt="Imagem indicando uma trasferência de pontos na Carteira de Habilitação de um condutor para outro" />
                     <p>TRANSFERÊNCIA DE PONTUAÇÃO ADMINISTRATIVA E JUDICIAL!</p>
                 </DivService>
             </DivServices>
@@ -80,6 +80,7 @@ const DivService = styled.div`
 
     & > img {
         width: 180px;
+        height: 180px;
     }
 
     & > p {

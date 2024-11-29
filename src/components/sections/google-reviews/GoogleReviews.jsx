@@ -39,7 +39,7 @@ export const GoogleReviewSection = () => {
                     {feedbackImages.map((img, index) => (
                         <SwiperSlide key={index}>
                             <Slide>
-                                <img src={img} alt={`Feedback ${index + 1}`} />
+                                <img src={img} alt={`Avaliação do Google ${index + 1}`} />
                             </Slide>
                         </SwiperSlide>
                     ))}
@@ -95,6 +95,7 @@ const Slide = styled.div`
 
     & > img {
         width: 100%;
+        height: 100%
     }
 `;
 
