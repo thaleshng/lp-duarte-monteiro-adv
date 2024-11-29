@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components";
-import { ContactButton } from "../../button/Button";
+import { ContactButton } from "../../buttons/ContactButton";
 import { useState } from "react";
 
 export const FaqSection = () => {

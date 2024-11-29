@@ -5,7 +5,7 @@ import scrollDownImg from "../../../assets/images/Siga-em-frente.webp"
 import bgImage from "../../../assets/images/bg-carro-em-movimento.jpg"
 import bgImageMobile from "../../../assets/images/bg-mobile.webp"
 
-import { ContactButton } from "../../button/Button"
+import { ContactButton } from "../../buttons/ContactButton"
 
 export const Hero = () => {
     return (

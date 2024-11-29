@@ -118,4 +118,5 @@ const Slide = styled.div`
 const NavButton = styled.button`
     font-size: 25px;
     cursor: pointer;
+    align-self: center;
 `;

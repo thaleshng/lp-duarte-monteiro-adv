@@ -4,7 +4,13 @@ import styled from 'styled-components';
 
 export const ContactButton = () => {
     return (
-        <Link href=""><FontAwesomeIcon icon={faWhatsapp} />Falar com advogado!</Link>
+        <Link 
+            href="https://api.whatsapp.com/send?phone=553186370315&text=Ol%C3%A1,%20estou%20com%20um%20problema%20na%20minha%20CNH%20e%20preciso%20de%20ajuda!" 
+            target='_blank'
+        >
+            <FontAwesomeIcon icon={faWhatsapp} />
+            Falar com Advogado!
+        </Link>
     )
 }
 

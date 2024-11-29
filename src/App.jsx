@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components"
 import { MainContent } from "./components/main-content/MainContent"
 import { Footer } from "./components/footer/Footer"
+import { FloatButton } from "./components/buttons/FloatButton"
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <GlobalStyle />
       <MainContent />
       <Footer />
+      <FloatButton />
     </>
   )
 }
@@ -31,7 +33,8 @@ export const GlobalStyle = createGlobalStyle`
     --secondary-bg-color: #FCDA40;
 
     --bg-color-button: #25D366;
-    --bg-color-button-hover: rgba(0, 128, 64, 0.6);
+    --bg-color-button-hover: #20B75D;
+    --bg-color-button-hover-box-shadow: rgba(0, 128, 64, 0.6);
 
     --accordion-border-color: #D5D8DC;
     --accordion-bg-color-hover: #222;

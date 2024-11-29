@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import profissionalImage from "../../../assets/images/imagem-advogado.webp"
-import { ContactButton } from "../../button/Button"
+import { ContactButton } from "../../buttons/ContactButton"
 
 export const AboutSection = () => {
     return (

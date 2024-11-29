@@ -14,7 +14,7 @@ export const Footer = () => {
                 <DivFooterContact>
                     <FooterTitle>contato</FooterTitle>
                     <p>Estamos localizados em Minas Gerais e atendemos todo território nacional.</p>
-                    <ContactInformation>WhatsApp: (31) 98637-0315</ContactInformation>
+                    <ContactLink href="https://api.whatsapp.com/send?phone=553186370315&text=Ol%C3%A1,%20estou%20com%20um%20problema%20na%20minha%20CNH%20e%20preciso%20de%20ajuda!" target="_blank">WhatsApp: (31) 98637-0315</ContactLink>
                 </DivFooterContact>
             </DivFooterContainer>
         </TagFooter>
@@ -49,7 +49,6 @@ const DivFooterContainer = styled.div`
 
         @media (max-width: 550px) {
             width: 100%;
-            /* height: 100%; */
         }
     }
 `
@@ -59,6 +58,7 @@ const DivFooterContact = styled.div`
     flex-direction: column;
     gap: 50px;
     text-align: center;
+    align-items: center;
 `
 
 const FooterTitle = styled.h2`
@@ -68,7 +68,9 @@ const FooterTitle = styled.h2`
     text-transform: uppercase;
 `
 
-const ContactInformation = styled.p`
+const ContactLink = styled.a`
     font-size: 20px;
     font-weight: 600;
+    display: inline-block;
+    text-align: center;
 `
