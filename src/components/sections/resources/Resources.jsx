@@ -42,12 +42,17 @@ const Section = styled.section`
 
     font-family: var(--font-roboto);
     color: var(--white-font-color);
+
+    @media (max-width: 767px) {
+        padding: 50px 15px;
+    }
 `
 
 const ResourcesSectionTitle = styled.h2`
     font-family: var(--font-poppins);
     font-size: 40px;
     font-weight: 800;
+    text-align: center;
 `
 
 const DivInfos = styled.div`
@@ -71,9 +76,15 @@ const ResourcesOptions = styled.p`
 
 const Resources = styled.div`
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
 
     text-align: center;
+
+    @media (max-width: 767px) {
+        gap: 30px;
+    }
 `
 
 const Resource = styled.fieldset`
@@ -82,6 +93,11 @@ const Resource = styled.fieldset`
     justify-content: center;
     align-items: center;
     position: relative;
+    flex-basis: 1;
+
+    @media (max-width: 375px) {
+        width: 300px;
+    }
 
     border-radius: 20px;
 `

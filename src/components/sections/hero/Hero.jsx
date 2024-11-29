@@ -1,7 +1,9 @@
 import styled from "styled-components"
+
 import logo from "../../../assets/images/logo.png"
 import scrollDownImg from "../../../assets/images/Siga-em-frente.webp"
 import bgImage from "../../../assets/images/bg-carro-em-movimento.jpg"
+import bgImageMobile from "../../../assets/images/bg-mobile.webp"
 
 import { ContactButton } from "../../button/Button"
 
@@ -35,11 +37,29 @@ const HeroContent = styled.section`
 
     text-align:center;
     font-family: var(--font-poppins);
+
+    @media (max-width: 767px) {
+        background: 
+            linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+            url(${bgImageMobile});
+        background-size: cover;
+        padding: 0 15px;
+    }
+
+    & > h1 {
+        width: 300px;
+        height: 300px;
+
+        @media (max-width: 375px) {
+            width: 200px;
+            height: 200px;
+        }
+    }
 `
 
 const LogoImg = styled.img`
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
 `
 
 const HeroTitle = styled.h2`
@@ -48,18 +68,43 @@ const HeroTitle = styled.h2`
     color: var(--primary-font-color);
 
     margin-bottom: 8px;
+
+    @media (max-width: 550px) {
+        font-size: 40px;
+    }
+
+    @media (max-width: 375px) {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
 `
 
 const HeroDescription = styled.p`
     font-size: 22px;
     font-weight: 400;
     color: var(--secondary-font-color);
+
+    @media (max-width: 550px) {
+        font-size: 20px;
+    }
+
+    @media (max-width: 375px) {
+        font-size: 16px;
+    }
 `
 
 const HeroSubtext = styled.p`
     font-size: 22px;
     font-weight: 600;
     color: var(--white-font-color);
+
+    @media (max-width: 550px) {
+        font-size: 20px;
+    }
+
+    @media (max-width: 375px) {
+        font-size: 16px;
+    }
 `
 
 const ScrollDownImg = styled.img`

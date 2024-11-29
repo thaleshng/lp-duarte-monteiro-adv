@@ -36,11 +36,21 @@ const DivFooterContainer = styled.div`
     display: flex;
     align-items: center;
     gap: 30px;
+    padding: 0 15px;
+
+    @media (max-width: 767px) {
+        flex-direction: column;
+    }
 
     & > iframe {
         width: 550px;
         height: 300px;
         border: none;
+
+        @media (max-width: 550px) {
+            width: 100%;
+            /* height: 100%; */
+        }
     }
 `
 

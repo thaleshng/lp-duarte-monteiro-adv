@@ -30,10 +30,19 @@ export const GoogleReviewSection = () => {
                     <FontAwesomeIcon icon={faChevronLeft} />
                 </NavButton>
                 <CustomSwiper
-                    slidesPerView={3}
-                    spaceBetween={30}
                     loop={true}
                     speed={1000}
+                    breakpoints={{
+                        320: {
+                            slidesPerView: 1,
+                        },
+                        768: {
+                            slidesPerView: 2,
+                        },
+                        1280: {
+                            slidesPerView: 3,
+                        },
+                    }}
                     onSwiper={(swiper) => (swiperRef.current = swiper)}
                 >
                     {feedbackImages.map((img, index) => (
@@ -69,15 +78,23 @@ const ReviewSectionTitle = styled.div`
     font-family: var(--font-poppins);
     font-size: 40px;
     font-weight: 800;
+    text-align: center;
 `;
 
 const DivSlider = styled.div`
     display: flex;
-    gap: 30px;
+    max-width: 1200px;
+    overflow: hidden;
+    padding: 0 15px;
+
+    @media (max-width: 1024px) {
+        max-width: 100vw;
+    }
 ` 
 
 const CustomSwiper = styled(Swiper)`
-    max-width: 1140px;
+    width: 100%;
+    max-width: 100vw;
 
     .swiper-slide {
         opacity: 1;
@@ -89,13 +106,21 @@ const Slide = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 350px;
-    height: 230px;
     overflow: hidden;
 
     & > img {
-        width: 100%;
-        height: 100%
+        width: 350px;
+        height: 230px;
+        max-width: 100%;
+        max-height: 100%;
+
+        @media (max-width: 768px) {
+            width: 300px;
+        }
+
+        @media (max-width: 350px) {
+            width: 250px;
+        }
     }
 `;
 

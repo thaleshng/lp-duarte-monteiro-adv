@@ -43,27 +43,52 @@ const AboutSectionTitle = styled.h2`
 
 const DivAbout = styled.div`
     display: flex;
+    align-items: center;
     gap: 50px;
+    padding: 0 15px;
+
+    @media (max-width: 820px) {
+        flex-direction: column;
+    }
 
     & > img {
         width: 360px;
         height: 368px;
 
-        border-radius: 10px; 
+        border-radius: 10px;
+        
+        @media (max-width: 820px) {
+            width: 68%;
+            height: 68%;
+        }
     }
 `
 
 const DivAboutInformation = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
 
     max-width: 630px;
+
+    @media (max-width: 768px) {
+        max-width: 70%;
+    }
 
     & > p {
         font-size: 18px; 
         font-weight: 400;
         line-height: 28px;
+
+        @media (max-width: 768px) {
+            text-align: justify;
+            line-height: normal;
+        }
+
+        @media (max-width: 375px) {
+            text-align: center;
+            line-height: normal;
+        }
     }
 
     & > p:last-child {

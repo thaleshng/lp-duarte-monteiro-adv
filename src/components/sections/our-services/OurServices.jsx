@@ -52,12 +52,17 @@ const Section = styled.section`
 
     font-family: var(--font-roboto);
     color: var(--black-font-color);
+
+    @media (max-width: 767px) {
+        padding: 50px 15px;
+    }
 `
 
 const ServicesSectionTitle = styled.h2`
     font-family: var(--font-poppins);
     font-size: 40px;
     font-weight: 800;
+    text-align: center;
 `
 
 const DivServices = styled.div`
@@ -77,6 +82,10 @@ const DivService = styled.div`
     text-align: center;
 
     width: 350px;
+
+    @media (max-width: 350px) {
+        width: 300px;
+    }
 
     & > img {
         width: 180px;

@@ -23,8 +23,26 @@ const Link = styled.a`
     transition: 0.3s ease-in-out;
     text-transform: uppercase;
 
+    @media (max-width: 500px) {
+        padding: 15px 45px;
+        font-size: 18px;
+    }
+
+    @media (max-width: 450px) {
+        padding: 15px 40px;
+    }
+
+    @media (max-width: 375px) {
+        padding: 15px 35px;
+        font-size: 16px;
+    }
+
+    @media (max-width: 350px) {
+        font-size: 14px;
+    }
+
     &:hover {
         background-color: #20B75D;
-        box-shadow: 0px 4px 12px rgba(0, 128, 64, 0.6);
+        box-shadow: 0px 4px 12px var(--bg-color-button-hover);
     }
 `

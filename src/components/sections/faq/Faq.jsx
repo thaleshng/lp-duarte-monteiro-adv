@@ -111,15 +111,16 @@ const FaqSectionTitle = styled.h2`
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 30px;
+    text-align: center;
 `;
 
 const DivAccordion = styled.div`
     margin-bottom: 40px;
+    padding: 0 15px;
 `
 
 const StyledAccordion = styled(Accordion)`
     background-color: var(--primary-bg-color);
-    width: 1200px;
     border: 1px solid var(--accordion-border-color);
 
     &:before {
