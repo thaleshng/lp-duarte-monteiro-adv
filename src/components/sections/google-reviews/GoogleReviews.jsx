@@ -13,7 +13,7 @@ import styled from "styled-components"
 export const GoogleReviewSection = () => {
     const swiperRef = useRef(null);
 
-    const feedbackImages = [
+    const reviewImages = [
         reviewImg1,
         reviewImg2,
         reviewImg3,
@@ -45,7 +45,7 @@ export const GoogleReviewSection = () => {
                     }}
                     onSwiper={(swiper) => (swiperRef.current = swiper)}
                 >
-                    {feedbackImages.map((img, index) => (
+                    {reviewImages.map((img, index) => (
                         <SwiperSlide key={index}>
                             <Slide>
                                 <img src={img} alt={`Avaliação do Google ${index + 1}`} />
