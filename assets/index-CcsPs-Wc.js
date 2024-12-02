@@ -948,12 +948,16 @@ Para saber mais detalhes CLIQUE AGORA no botão do WhatsApp aqui do lado e peça
             }
         `;const a=new MutationObserver(c=>{c.forEach(d=>{d.addedNodes.length&&l()})});a.observe(document.body,{childList:!0,subtree:!0});function l(){const c=document.querySelector('.ti-widget[data-layout-id="4"][data-set-id="light-background"] .ti-reviews-container-wrapper');c&&(window.innerWidth>=900?c.style.justifyContent="center":c.style.justifyContent="flex-start")}return window.addEventListener("resize",l),l(),()=>{document.head.removeChild(o),n&&n.removeChild(i),window.removeEventListener("resize",l),a.disconnect()}},[]),j.jsxs(uP,{className:"google-reviews",ref:e,children:[j.jsx(cP,{children:"Avaliações do Google:"}),j.jsx("div",{"data-widget-id":"9919fc43756a937c9c46f748628"})]})},uP=xe.section`
     padding: 100px 0;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 40px;
+
     font-family: var(--font-roboto);
     color: var(--black-font-color);
+
+    overflow: hidden;
 `,cP=xe.div`
     font-family: var(--font-poppins);
     font-size: 40px;
@@ -1272,7 +1276,6 @@ Para saber mais detalhes CLIQUE AGORA no botão do WhatsApp aqui do lado e peça
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
 
     > a {
       text-decoration: none;
