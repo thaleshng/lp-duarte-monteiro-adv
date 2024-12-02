@@ -1272,6 +1272,7 @@ Para saber mais detalhes CLIQUE AGORA no botão do WhatsApp aqui do lado e peça
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 
     > a {
       text-decoration: none;
