@@ -868,7 +868,7 @@ Para saber mais detalhes CLIQUE AGORA no botão do WhatsApp aqui do lado e peça
     max-width: 630px;
 
     @media (max-width: 768px) {
-        max-width: 70%;
+        max-width: 90%;
     }
 
     & > p {
@@ -1171,7 +1171,7 @@ Para saber mais detalhes CLIQUE AGORA no botão do WhatsApp aqui do lado e peça
     text-align: center;
 
     max-width: 1140px; 
-`,FP=()=>j.jsxs("main",{children:[j.jsx(hP,{}),j.jsx(RP,{}),j.jsx(AP,{}),j.jsx(bk,{}),j.jsx(nP,{}),j.jsx(lP,{}),j.jsx(gk,{})]}),BP=()=>j.jsx(VP,{children:j.jsxs(WP,{children:[j.jsx("iframe",{src:"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15503525.814574206!2d-45.088197!3d-18.436471!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa690a165324289%3A0x112170c9379de7b3!2sMinas%20Gerais%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1732839846519!5m2!1spt-BR!2sus",allowFullScreen:!0,loading:"lazy",referrerPolicy:"no-referrer-when-downgrade",title:"Mapa de Minas Gerais, Brasil"}),j.jsxs(HP,{children:[j.jsx(GP,{children:"contato"}),j.jsx("p",{children:"Estamos localizados em Minas Gerais e atendemos todo território nacional."}),j.jsx(UP,{href:"https://api.whatsapp.com/send?phone=553186370315&text=Ol%C3%A1,%20estou%20com%20um%20problema%20na%20minha%20CNH%20e%20preciso%20de%20ajuda!",target:"_blank",children:"WhatsApp: (31) 98637-0315"})]})]})}),VP=xe.footer`
+`,FP=()=>j.jsxs("main",{children:[j.jsx(hP,{}),j.jsx(RP,{}),j.jsx(AP,{}),j.jsx(bk,{}),j.jsx(nP,{}),j.jsx(gk,{}),j.jsx(lP,{})]}),BP=()=>j.jsx(VP,{children:j.jsxs(WP,{children:[j.jsx("iframe",{src:"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15503525.814574206!2d-45.088197!3d-18.436471!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa690a165324289%3A0x112170c9379de7b3!2sMinas%20Gerais%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1732839846519!5m2!1spt-BR!2sus",allowFullScreen:!0,loading:"lazy",referrerPolicy:"no-referrer-when-downgrade",title:"Mapa de Minas Gerais, Brasil"}),j.jsxs(HP,{children:[j.jsx(GP,{children:"contato"}),j.jsx("p",{children:"Estamos localizados em Minas Gerais e atendemos todo território nacional."}),j.jsx(UP,{href:"https://api.whatsapp.com/send?phone=553186370315&text=Ol%C3%A1,%20estou%20com%20um%20problema%20na%20minha%20CNH%20e%20preciso%20de%20ajuda!",target:"_blank",children:"WhatsApp: (31) 98637-0315"})]})]})}),VP=xe.footer`
     padding: 50px 0;
 
     display: flex;
@@ -1179,7 +1179,8 @@ Para saber mais detalhes CLIQUE AGORA no botão do WhatsApp aqui do lado e peça
     align-items: center;
 
     font-family: var(--font-roboto);
-    color: var(--black-font-color);
+    color: var(--white-font-color);
+    background-color: var(--primary-bg-color);
 `,WP=xe.div`
     display: flex;
     align-items: center;
@@ -1215,6 +1216,7 @@ Para saber mais detalhes CLIQUE AGORA no botão do WhatsApp aqui do lado e peça
     font-weight: 600;
     display: inline-block;
     text-align: center;
+    color: var(--white-font-color);
 `,YP=()=>j.jsx(KP,{href:"https://api.whatsapp.com/send?phone=553186370315&text=Ol%C3%A1,%20estou%20com%20um%20problema%20na%20minha%20CNH%20e%20preciso%20de%20ajuda!",target:"_blank",children:j.jsx(Vr,{icon:Jv})}),KP=xe.a`
     position: fixed;
     bottom: 30px;
