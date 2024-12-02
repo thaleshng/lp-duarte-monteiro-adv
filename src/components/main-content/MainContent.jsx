@@ -14,8 +14,8 @@ export const MainContent = () => {
             <ServicesSection />
             <AboutSection />
             <CustomerFeedbackSection />
-            <GoogleReviewsSection />
             <FaqSection />
+            <GoogleReviewsSection />
         </main>
     )
 }

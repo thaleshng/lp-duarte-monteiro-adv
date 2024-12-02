@@ -29,7 +29,8 @@ const TagFooter = styled.footer`
     align-items: center;
 
     font-family: var(--font-roboto);
-    color: var(--black-font-color);
+    color: var(--white-font-color);
+    background-color: var(--primary-bg-color);
 `
 
 const DivFooterContainer = styled.div`
@@ -73,4 +74,5 @@ const ContactLink = styled.a`
     font-weight: 600;
     display: inline-block;
     text-align: center;
+    color: var(--white-font-color);
 `

@@ -72,7 +72,7 @@ const DivAboutInformation = styled.div`
     max-width: 630px;
 
     @media (max-width: 768px) {
-        max-width: 70%;
+        max-width: 90%;
     }
 
     & > p {
