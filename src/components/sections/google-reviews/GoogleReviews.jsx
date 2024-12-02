@@ -72,12 +72,16 @@ export const GoogleReviewsSection = () => {
 
 const Section = styled.section`
     padding: 100px 0;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 40px;
+
     font-family: var(--font-roboto);
     color: var(--black-font-color);
+
+    overflow: hidden;
 `;
 
 const ReviewsSectionTitle = styled.div`
